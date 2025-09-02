@@ -14,8 +14,8 @@ const Projects = () => {
         "Real-time risk assessment and personalized insights"
       ],
       recognition: "🏆 1st Place - WTM SheInnovates Hackathon",
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://seraphina.streamlit.app/",
+      githubLink: "https://github.com/raagavi2105/Seraphina-",
       category: "Machine Learning",
       gradient: "from-primary to-secondary"
     },
@@ -30,8 +30,8 @@ const Projects = () => {
         "30% reduction in prediction processing time"
       ],
       recognition: "✨ 25% increase in user productivity insights",
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://workzendevshouse-gf9k45uspbov3nj2z7m3tr.streamlit.app/",
+      githubLink: "https://github.com/raagavi2105/Workzen_Devshouse",
       category: "Machine Learning",
       gradient: "from-secondary to-accent"
     },
@@ -46,26 +46,10 @@ const Projects = () => {
         "Real-time analytics and campaign performance tracking"
       ],
       recognition: "🚀 100% feature coverage with scalable architecture",
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://xcrm-mini.vercel.app",
+      githubLink: "https://github.com/raagavi2105/X_CRM",
       category: "Full-Stack",
       gradient: "from-accent to-primary"
-    },
-    {
-      title: "FinLit: Financial Literacy Platform",
-      description: "Comprehensive financial platform with AI chatbot, expenditure tracking, and personalized investment recommendations.",
-      techStack: ["Django", "PostgreSQL", "AI Chatbot", "Chart.js"],
-      features: [
-        "AI chatbot resolving 95% of financial queries",
-        "Handles 100+ concurrent users efficiently",
-        "5+ interactive charts for expenditure visualization",
-        "40% improvement in financial planning accuracy"
-      ],
-      recognition: "💰 Comprehensive financial education solution",
-      liveLink: "#",
-      githubLink: "#",
-      category: "FinTech",
-      gradient: "from-primary to-accent"
     },
     {
       title: "Vidyasagar Dashboard",
@@ -78,8 +62,6 @@ const Projects = () => {
         "40% improvement in system adoption rates"
       ],
       recognition: "📊 Complete educational data management solution",
-      liveLink: "#",
-      githubLink: "#",
       category: "Web Application",
       gradient: "from-secondary to-primary"
     },
@@ -94,10 +76,26 @@ const Projects = () => {
         "Advanced query handling for configurations"
       ],
       recognition: "🤖 Intelligent documentation assistance",
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://zeotapcdp.onrender.com/",
+      githubLink: "https://github.com/raagavi2105/zeotapcdp",
       category: "AI/NLP",
       gradient: "from-accent to-secondary"
+    },
+    {
+      title: "FinLit: Financial Literacy Platform",
+      description: "Comprehensive financial platform with AI chatbot, expenditure tracking, and personalized investment recommendations.",
+      techStack: ["Django", "PostgreSQL", "AI Chatbot", "Chart.js"],
+      features: [
+        "AI chatbot resolving 95% of financial queries",
+        "Handles 100+ concurrent users efficiently",
+        "5+ interactive charts for expenditure visualization",
+        "40% improvement in financial planning accuracy"
+      ],
+      recognition: "💰 Comprehensive financial education solution",
+      liveLink: "https://finlit-entropy.onrender.com/",
+      githubLink: "https://github.com/raagavi2105/FinLit_Entropy",
+      category: "FinTech",
+      gradient: "from-primary to-accent"
     }
   ];
 
@@ -195,19 +193,27 @@ const Projects = () => {
 
               {/* Actions */}
               <div className="flex gap-3">
-                <Button 
-                  variant="default" 
-                  className="flex-1 bg-gradient-primary hover:shadow-glow transition-all duration-300"
-                >
-                  <ExternalLink className="mr-2" size={16} />
-                  Live Demo
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="border-primary/30 hover:bg-primary/10 hover:border-primary transition-all duration-300"
-                >
-                  <Github size={16} />
-                </Button>
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button 
+                      variant="default" 
+                      className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      Live Demo
+                    </Button>
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <Button 
+                      variant="outline" 
+                      className="border-primary/30 hover:bg-primary/10 hover:border-primary transition-all duration-300"
+                    >
+                      <Github size={16} />
+                    </Button>
+                  </a>
+                )}
               </div>
             </div>
           ))}

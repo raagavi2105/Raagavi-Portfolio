@@ -73,16 +73,16 @@ const Hero = () => {
               </a>
 
               {/* Get In Touch Button */}
-              <Button 
-                variant="outline" 
-                className="border-primary/30 hover:bg-primary/10 hover:border-primary transition-all duration-300 px-8 py-6 text-lg"
-                asChild
-              >
-                <a href="mailto:raagavi2105@gmail.com">
-                  <Mail className="mr-2" size={20} />
-                  Get In Touch
-                </a>
-              </Button>
+              <a href="mailto:raagavi2105@gmail.com">
+  <Button 
+    variant="outline" 
+    className="border-primary/30 hover:bg-primary/10 hover:border-primary transition-all duration-300 px-8 py-6 text-lg"
+  >
+    <Mail className="mr-2" size={20} />
+    Get In Touch
+  </Button>
+</a>
+
             </div>
 
             {/* Social Links */}
