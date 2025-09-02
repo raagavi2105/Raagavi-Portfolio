@@ -6,10 +6,10 @@ const Skills = () => {
       title: "Programming Languages",
       icon: <Code className="w-6 h-6" />,
       skills: [
-        { name: "Python", logo: "🐍" },
-        { name: "JavaScript", logo: "⚡" },
-        { name: "C/C++", logo: "🔧" },
-        { name: "SQL", logo: "🗃️" }
+        { name: "Python", logo: "𝐏𝗬" },
+        { name: "JavaScript", logo: "𝗝𝙎" },
+        { name: "C/C++", logo: "𝘾" },
+        { name: "SQL", logo: "📈" }
       ],
       gradient: "from-primary to-secondary"
     },
@@ -17,7 +17,7 @@ const Skills = () => {
       title: "Frameworks & Libraries",
       icon: <Wrench className="w-6 h-6" />,
       skills: [
-        { name: "Django & Flask", logo: "🌐" },
+        { name: "Django & Flask", logo: "🌶️" },
         { name: "React.js", logo: "⚛️" },
         { name: "Node.js & Express", logo: "🟢" },
         { name: "Streamlit", logo: "📊" }

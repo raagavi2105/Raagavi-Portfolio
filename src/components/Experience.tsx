@@ -6,7 +6,7 @@ const Experience = () => {
       title: "Operations Lead",
       company: "Google Developer Student Clubs",
       location: "SRM IST Ramapuram, Chennai, Tamil Nadu",
-      period: "Oct 2023 – Present",
+      period: "Oct 2023 – April 2025",
       description: [
         "Lead and manage a team of volunteers to support and execute club activities, including workshops, hackathons, and speaker sessions",
         "Develop and implement strategic plans for club growth, organizing events that align with the club's goals and GDSC's mission",

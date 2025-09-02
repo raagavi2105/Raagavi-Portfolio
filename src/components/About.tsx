@@ -44,7 +44,7 @@ const About = () => {
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
                 I am a highly motivated Computer Science engineering student with a strong foundation in 
-                machine learning, software development, and technical problem-solving. With a 9.54 CGPA 
+                machine learning, software development, and technical problem-solving. With a 9.58 CGPA 
                 at SRM Institute of Science and Technology, I have consistently demonstrated academic excellence 
                 and practical application of knowledge.
               </p>
@@ -103,7 +103,7 @@ const About = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                    9.54
+                    9.58
                   </div>
                   <p className="text-muted-foreground">CGPA</p>
                 </div>

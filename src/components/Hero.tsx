@@ -1,6 +1,7 @@
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePicture from '@/assets/profile-picture.jpg';
+import profilePicture from '@/assets/profile-picture.png';
+import cvFile from '@/assets/raagavi-cv.pdf'; // ✅ import the PDF file properly
 
 const Hero = () => {
   return (
@@ -58,13 +59,29 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-slide-up" style={{ animationDelay: '1s' }}>
-              <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg">
-                <Download className="mr-2" size={20} />
-                Download CV
-              </Button>
-              <Button variant="outline" className="border-primary/30 hover:bg-primary/10 hover:border-primary transition-all duration-300 px-8 py-6 text-lg">
-                <Mail className="mr-2" size={20} />
-                Get In Touch
+              
+              {/* Download CV Button */}
+              <a 
+                href={cvFile} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300 px-8 py-6 text-lg">
+                  <Download className="mr-2" size={20} />
+                  Download CV
+                </Button>
+              </a>
+
+              {/* Get In Touch Button */}
+              <Button 
+                variant="outline" 
+                className="border-primary/30 hover:bg-primary/10 hover:border-primary transition-all duration-300 px-8 py-6 text-lg"
+                asChild
+              >
+                <a href="mailto:raagavi2105@gmail.com">
+                  <Mail className="mr-2" size={20} />
+                  Get In Touch
+                </a>
               </Button>
             </div>
 
